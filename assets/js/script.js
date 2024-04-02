@@ -27,4 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   navMenuIcon.addEventListener("click", toggleNav);
   navDropdown.addEventListener("click", toggleResources)
+
 });
+
