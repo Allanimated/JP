@@ -24,6 +24,33 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <!-- Bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Image 2024-03-18 at 13.17.25_5229e03f.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="./assets/images/Image 2024-03-18 at 13.17.25_5229e03f.jpg"
+      type="image/x-icon"
+    />
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="navbar-logo-left">
@@ -41,10 +68,11 @@
             </a>
             <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
               <ul role="list" class="nav-menu-two w-list-unstyled">
-                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="navbar-links">Home</a></li>
                 <li>
-                  <a href="#" class="nav-link">Skills</a>
-                  <a href="#" class="nav-link">Projects</a>
+                  <a href="#" class="navbar-links">Skills</a>
+                  <a href="#" class="navbar-links">Projects</a>
+                  <a href="#" class="navbar-links">Testimonials</a>
                 </li>
                 <li>
                   <div
@@ -65,7 +93,7 @@
                     >
                       <a
                         href="./assets/JULIET MY RESUME.docx"
-                        class="nav-dropdown-link w-dropdown-link"
+                        class="nav-dropdown-links w-dropdown-link"
                         download
                         >Resume.pdf</a
                       >
@@ -82,7 +110,9 @@
             </nav>
             <div class="menu-button w-nav-button">
               <div class="w-icon-nav-menu">
-                <span class="material-symbols-outlined" id="menu-icon"> menu </span>
+                <span class="material-symbols-outlined" id="menu-icon">
+                  menu
+                </span>
               </div>
             </div>
           </div>
@@ -103,15 +133,14 @@
               accountant with five years experience , I possess strong
               analytical and problem-solving skills that help me work
               efficiently and independently.I am also a seasoned Event Manager
-              with four years experience in event planning.Skilled in
-              coordinating event logistics.
+              with four years experience in event planning.
             </blockquote>
             <p class="margin-bottom-24px">Accountant & Event Manager</p>
             <a href="#" class="button-primary-2 w-button">Let's Chat!</a>
           </div>
           <div class="hero-split">
             <img
-              src="assets/images/WhatsApp Image 2024-03-18 at 13.17.25_5229e03f.jpg"
+              src="assets/images/Image 2024-03-18 at 13.17.25_5229e03f.jpg"
               alt=""
               class="shadow-two"
             />
@@ -133,28 +162,191 @@
         </p>
         <div class="comprison-table">
           <div class="comparison-row">
-            <div class="comparison-negative">Event planning and Coordination</div>
-            <div class="comparison-positive">Accounting and Book keeping </div>
+            <div class="comparison-negative">
+              Event planning and Coordination
+            </div>
+            <div class="comparison-positive">Accounting and Book keeping</div>
           </div>
           <div class="comparison-row">
-            <div class="comparison-negative">Office Administration and Managment</div>
-            <div class="comparison-positive">Event logistics and safety planning</div>
+            <div class="comparison-negative">
+              Office Administration and Managment
+            </div>
+            <div class="comparison-positive">
+              Event logistics and safety planning
+            </div>
           </div>
           <div class="comparison-row">
-            <div class="comparison-negative">Event Marketing and Prommotion</div>
-            <div class="comparison-positive">Event registration and Ticketing systems</div>
+            <div class="comparison-negative">Event Marketing and Promotion</div>
+            <div class="comparison-positive">
+              Event registration and Ticketing systems
+            </div>
           </div>
           <div class="comparison-row">
             <div class="comparison-negative">Event set-up and Design</div>
-            <div class="comparison-positive">Team Supervision and Leadership</div>
+            <div class="comparison-positive">
+              Team Supervision and Leadership
+            </div>
           </div>
           <div class="comparison-row">
             <div class="comparison-negative">Sales Operations</div>
-            <div class="comparison-positive">Proficient problem-solving skills and analytical thinking</div>
+            <div class="comparison-positive">
+              Proficient problem-solving skills and analytical thinking
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <script src="./assets/js/script.js"></script>
+    <section class="projects">
+      <div class="row align-items-center container-3">
+        <div class="col-lg-6 md-6 sm-12 project-block">
+          <h2 class="center-heading-2">My Recent Works</h2>
+          <p class="centered-subheading text-start">
+            In my role,I evaluate event success and provide valuable insights
+            and recommendations in post-event reports. Through collaborative
+            efforts with vendors, I have crafted unique and memorable event
+            experiences, fostering repeat business and earning a 95%
+            satisfaction rating from clients and attendees.
+          </p>
+        </div>
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade col-lg-6 md-6 sm-12 project-block"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/images/Event_one-1.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Event_one-2.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.10.12_56f328f5.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.15.00_e67a5aaa.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.11.20_b1bfcc99.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.19.14_e72f62c6.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.28.45_49682362.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.28.44_99b17807.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.25.21_ff1b212e.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.37.25_f1fc658d.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.25.20_cbf3cf6a.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.13.08_08f8034a.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.21.05_99d16369.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.25.20_b65c99f0.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.37.25_2c84b1fd.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/Image 2024-03-18 at 13.25.21_ff1b212e.jpg"
+                class="d-block carousel-image"
+                alt="img.jpg"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
