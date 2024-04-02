@@ -549,7 +549,7 @@ body{
 
 .centered-subheading {
     color: var(--white_a80);
-    text-align: center;
+    text-align: start;
     max-width: 550px;
     margin-left: auto;
     margin-right: auto;
@@ -620,7 +620,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    row-gap: 2rem;
+    row-gap: 1rem;
     text-align: start;
 }
 
@@ -775,7 +775,7 @@ body{
     }
     .hero-heading-left,
     .hero-heading-center, .features-table, .projects {
-        padding: 60px 15px;
+        padding: 50px 15px;
     }
 }
 
@@ -829,14 +829,14 @@ body{
     }
 
     .center-heading-2 {
-        margin-bottom: 24px;
+        margin-bottom: 10px;
         font-size: 35px;
     }
     .centered-subheading {
-        text-align: center;
         font-size: 16px;
         font-weight: var(--fw-400);
         font-style: italic;
+        text-align: left;
     }
     .comparison-row-main {
         column-gap: 20px;
