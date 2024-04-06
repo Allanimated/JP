@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const icon = document.getElementById("menu-icon");
   const navDropdown = document.querySelector(".nav-dropdown-icon");
   const resourcesNav = document.querySelector(".nav-dropdown-list");
-
+  const navBarLinks = document.querySelectorAll(".navbar-links");
 
   const toggleNav = (event) => {
     if (nav.style.display === "none" || nav.style.display === "") {
@@ -26,7 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   navMenuIcon.addEventListener("click", toggleNav);
-  navDropdown.addEventListener("click", toggleResources)
+  navDropdown.addEventListener("click", toggleResources);
+  navBarLinks.forEach((navLink) =>
+    navLink.addEventListener("click", toggleNav)
+  ); // close navbar when link is clicked
+
 
 });
 
