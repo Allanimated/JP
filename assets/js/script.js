@@ -28,8 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
   navMenuIcon.addEventListener("click", toggleNav);
   navDropdown.addEventListener("click", toggleResources);
   navBarLinks.forEach((navLink) =>
-    navLink.addEventListener("click", toggleNav)
-  ); // close navbar when link is clicked
+    navLink.addEventListener("click", (event)=>{
+      console.log(window.innerWidth);
+      if (window.innerWidth <= 991) {
+        toggleNav(event)
+      }
+    })
+  ); // close navbar when link is clicked only in tablet and phone view
 
 
 });
