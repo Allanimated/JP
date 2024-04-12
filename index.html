@@ -55,8 +55,22 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/Juliet Logo.png" />
   </head>
-  <body>
+  <body class="active">
+    <!-- Loader -->
+    <div class="loading" id="loader">
+       <img
+        src="./assets/images/Juliet Logo.png"
+        width="70"
+        height="70"
+        alt=""
+        class="circle"
+      />
+    </div>
     <div class="navbar-logo-left">
       <div
         class="navbar-logo-left-container"

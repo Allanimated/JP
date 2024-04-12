@@ -1,3 +1,6 @@
+const loader = document.getElementById("loader");
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const navMenuIcon = document.querySelector(".w-icon-nav-menu");
   const nav = document.querySelector(".nav-menu-two");
@@ -5,6 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const navDropdown = document.querySelector(".nav-dropdown-icon");
   const resourcesNav = document.querySelector(".nav-dropdown-list");
   const navBarLinks = document.querySelectorAll(".navbar-links");
+
+ //loader
+  loader.classList.add("loaded");
+  document.body.classList.remove("active");
 
   const toggleNav = (event) => {
     if (nav.style.display === "none" || nav.style.display === "") {
