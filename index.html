@@ -55,6 +55,8 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Email SMTP -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- 
     - preload images
   -->
@@ -122,7 +124,9 @@
                   <div class="nav-divider"></div>
                 </li>
                 <li class="mobile-margin-top-10">
-                  <a href="#contact" class="button-primary w-button">Contact me</a>
+                  <a href="#contact" class="button-primary w-button"
+                    >Contact me</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -154,7 +158,11 @@
               with four years experience in event planning.
             </blockquote>
             <p class="margin-bottom-24px">Accountant & Event Manager</p>
-            <a href="#" class="button-primary-2 w-button">Let's Chat!</a>
+            <a
+              href="https://www.linkedin.com/in/cpa-juliet-waruguru-1a297280/"
+              class="button-primary-2 w-button"
+              >Let's Chat!</a
+            >
           </div>
           <div class="hero-split">
             <img
@@ -444,27 +452,40 @@
     <section class="footer-subscribe" id="contact">
       <div class="container-5">
         <div class="footer-form-two w-form">
-          <form action="" class="footer-form-container-two" data-reveal>
+          <h2
+            class="text-center center-heading-2"
+            style="text-shadow: none"
+            data-reveal
+          >
+            send me a message
+          </h2>
+          <form
+            action="https://formspree.io/f/mgegpdda"
+            method="POST"
+            class="footer-form-container-two"
+            data-reveal
+          >
             <input
-              type="text"
+              type="email"
               placeholder="Enter your email"
               class="footer-form-email"
+              id="email-sender"
+              name="email"
+              required
             />
             <div class="footer-form-block-two">
-              <input
-                type="text"
+              <textarea
+                name="message"
+                id="email-body"
                 class="footer-form-input w-input"
                 placeholder="compose here..."
-              />
-              <button class="button-primary-4">Shoot Email</button>
+                required
+              ></textarea>
+              <button class="button-primary-4" type="submit">
+                Shoot Email
+              </button>
             </div>
           </form>
-          <div class="w-form-done">
-            <div>Thank You! Your email has been received</div>
-          </div>
-          <div class="w-form-fail">
-            <div>OOPS! Something went wrong!</div>
-          </div>
         </div>
         <div class="footer-wrapper-three">
           <div class="footer-block-three">
@@ -473,13 +494,17 @@
             <a href="projects" class="footer-link-three">Projects</a>
           </div>
           <div class="footer-social-block-three">
-            <a href="#" class="footer-social-link-three w-inline-block"
+            <a
+              href="https://www.linkedin.com/in/cpa-juliet-waruguru-1a297280/"
+              class="footer-social-link-three w-inline-block"
               ><i class="bi bi-linkedin"></i
             ></a>
             <a href="#" class="footer-social-link-three w-inline-block"
               ><i class="bi bi-instagram"></i
             ></a>
-            <a href="#" class="footer-social-link-three w-inline-block"
+            <a
+              href="mailto:julietbuhler116@gmail.com"
+              class="footer-social-link-three w-inline-block"
               ><i class="bi bi-envelope"></i
             ></a>
           </div>
@@ -491,7 +516,7 @@
           </div>
           <div class="footer-legal-block">
             <a href="mailto:ngokonyoallan@gmail.com" class="footer-legal-link"
-              >@Allanimated</a
+              >Created by Allanimated.</a
             >
           </div>
         </div>

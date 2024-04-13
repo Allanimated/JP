@@ -722,7 +722,7 @@ body.active {
 }
 
 .project-block {
-    width: 46%;
+    width: 40%;
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -735,10 +735,9 @@ body.active {
 .carousel-image {
     width: 100%;
     max-width: 600px;
-    object-fit: contain;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
+    height: 100%;
 }
 
 .container-3 {
