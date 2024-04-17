@@ -9,6 +9,34 @@ document.addEventListener("DOMContentLoaded", () => {
   const navDropdown = document.querySelector(".nav-dropdown-icon");
   const resourcesNav = document.querySelector(".nav-dropdown-list");
   const navBarLinks = document.querySelectorAll(".navbar-links");
+  const eventsButton = document.getElementById("events-button");
+  const accountingButton = document.getElementById("accounting-button");
+  const eventsPortfolio = document.getElementById("events-portfolio");
+  const accountingPortfolio = document.getElementById("accounting-portfolio")
+  const portfolio = document.getElementById("portfolio")
+
+  //set default view to events
+  eventsPortfolio.classList.add("visible")
+  accountingPortfolio.classList.remove("visible");
+  portfolio.style.height = eventsPortfolio.clientHeight + 'px'
+
+  eventsButton.addEventListener("click", changeView)
+  accountingButton.addEventListener("click", changeView)
+
+  function changeView(e) {
+    const id = e.target.id;
+    if (id === "events-button") {
+      eventsPortfolio.classList.add("visible")
+      accountingPortfolio.classList.remove("visible")
+      portfolio.style.height = eventsPortfolio.clientHeight + "px";
+
+    } else {
+      eventsPortfolio.classList.remove("visible");
+      accountingPortfolio.classList.add("visible");
+      portfolio.style.height = accountingPortfolio.clientHeight + "px";
+
+    }
+  }
 
   //loader
   loader.classList.add("loaded");
